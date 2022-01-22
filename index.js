@@ -38,10 +38,10 @@ function giveAttr(btn) {
 
 function determineWinner(arr) {
     if (arr[0] > arr[1]) {
-        document.querySelector(".result-player-1").textContent = "WINNER!";
+        document.querySelector(".result-player-1").textContent = "WINNER PLAYER1!";
     }
     else if (arr[0] < arr[1]) {
-        document.querySelector(".result-player-2").textContent = "WINNER!";
+        document.querySelector(".result-player-2").textContent = "WINNER PLAYER2!";
     }
     else document.getElementById("draw").textContent = "DRAW!";
     document.getElementById("play-again").style="visibility: visible; opacity: 1;";
