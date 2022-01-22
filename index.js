@@ -28,7 +28,7 @@ btnP2.onclick = () => {
 
 function rollDice(dice) {
     let rollDiceIndex = Math.floor(Math.random() * 6) + 1;
-    dice.setAttribute("src", `/images/dice${rollDiceIndex}.png`);
+    dice.setAttribute("src", `images/dice${rollDiceIndex}.png`);
     return rollDiceIndex;
 }
 
@@ -58,8 +58,6 @@ function playAgain(){
     document.getElementById("draw").textContent = "";
     btnP1.removeAttribute("active");
     btnP2.removeAttribute("active");
-    btnP1.setAttribute("src", "/images/dice6.png");
-    btnP2.setAttribute("src", "/images/dice6.png");
     document.getElementById("play-again").style="visibility: hidden; opacity: 0;";
 }
 
